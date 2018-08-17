@@ -9698,9 +9698,29 @@ ul.actions.vertical li:first-child {
 	height: 400px;
 }
 
+/* teampage */
 
+.team{
 
-
+}
+.team h1{
+    text-align: center;
+}
+.team h2{
+    
+}
+.team p{
+    font-family: 'Open Sans', sans-serif;
+}
+.team p a{
+    font-family: 'Open Sans', sans-serif;
+}
+.team .team-rightIMG{
+    float:right;
+}
+.team .team-leftIMG{
+    float:left;
+}
 
 
 
