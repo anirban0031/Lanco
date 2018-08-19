@@ -9593,7 +9593,7 @@ html,body,p,h1,h2,h3,h4,h5,h6,span{
 	-webkit-pointer-events: none;
 	-ms-pointer-events: none;
 	pointer-events: none;
-	background: rgba(36,41,67,.98);
+	background: rgba(34,34,34,.98);
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	height: 100%;
@@ -9751,7 +9751,31 @@ ul.actions.vertical li:first-child {
 .wrap-vd{
     text-align: center;
 }
-
+.video-mame{
+    margin-top: 26%;
+}
+.video-mame h1,.video-mame p{
+    color: #01391E;
+}
+ul.socialfoot{
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+ul.socialfoot li{
+    float: left;
+}
+ul.socialfoot li a {
+	float: left;
+	font-size: 25px;
+	color: #666666;
+	padding: 0px 5px;
+	margin-right: 5px;
+}
+ul.socialfoot li a:hover{
+    color: #01391E;
+}
 
 
 
@@ -9980,6 +10004,15 @@ ul.actions.vertical li:first-child {
 .wrap-vd h1 {
 	color: #01391E;
 	font-size: 30px;
+}
+ul.socialfoot {
+	float: none;
+	width: 105px;
+	padding: 0px;
+	margin-bottom: 10px;
+	clear: both;
+	overflow: auto;
+	margin: 0px auto 20px;
 }
 
 }
