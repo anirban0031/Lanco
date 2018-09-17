@@ -90,7 +90,11 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
+<<<<<<< HEAD
 /******/ 	var hotCurrentHash = "070514dfe4f911b87c79"; // eslint-disable-line no-unused-vars
+=======
+/******/ 	var hotCurrentHash = "79bb70b6890d8aabb147"; // eslint-disable-line no-unused-vars
+>>>>>>> e46c0f70a9d4a1e174a8b03a1e18473a66688c36
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -755,7 +759,11 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
+<<<<<<< HEAD
 /******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles\\pages\\_error.js","2":"bundles\\pages\\_app.js"}[chunkId]||chunkId) + ".js";
+=======
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles\\pages\\_error.js","2":"bundles\\pages\\_app.js","4":"bundles\\pages\\index.js","7":"bundles\\pages\\MD.js"}[chunkId]||chunkId) + ".js";
+>>>>>>> e46c0f70a9d4a1e174a8b03a1e18473a66688c36
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
