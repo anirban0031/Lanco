@@ -9155,20 +9155,20 @@ html,body,p,h1,h2,h3,h4,h5,h6,span{
     padding: 10px;
 }
 .wrapHbox > a .boxwrapS span{
-    transition-delay: .4s;
+    transition: all .8s;
     color: #ffffff;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
-    transition: color .4s;
     text-transform: uppercase;
     width: 100%;
     margin: 0;
-    line-height: 1.4;
     font-family: 'Open Sans', sans-serif;
     display: block;
 }
 .wrapHbox > a .boxwrapS span.top-right{
-    text-align: right;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 185px;
 }
 .wrapHbox > a .boxwrapS .bottom-box{
     margin-top: 10px;
@@ -9178,7 +9178,7 @@ html,body,p,h1,h2,h3,h4,h5,h6,span{
 .wrapHbox > a .boxwrapS .bottom-box span.bottom-left{
     transition-delay: .4s;
     color: #ffffff;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     transition: color .4s;
     text-transform: uppercase;
@@ -9186,7 +9186,8 @@ html,body,p,h1,h2,h3,h4,h5,h6,span{
     margin: 0;
     line-height: 1.4;
     font-family: 'Open Sans', sans-serif;
-    display: block;
+	display: block;
+	opacity: 1;
 }
 .wrapHbox > a .boxwrapS .bottom-box p.details{
     font-family: 'Open Sans', sans-serif;
@@ -9199,6 +9200,10 @@ html,body,p,h1,h2,h3,h4,h5,h6,span{
     margin-top: .5rem;
     transform: translateY(10px) translateZ(0);
     font-weight: 600;
+}
+.wrapHbox > a:hover .boxwrapS span.top-right{
+	opacity: 0;
+	transition: all .4s;
 }
 .wrapHbox > a .bg{
     position: absolute;
@@ -9221,7 +9226,7 @@ html,body,p,h1,h2,h3,h4,h5,h6,span{
 
 .wrapHbox > a:hover .bottom-box {
 	transition-delay: .1s;
-	transform: translateY(0) translateZ(0);
+	transform: translateY(-140%) translateZ(0);
 }
 .wrapHbox a:hover p {
 	transition-delay: .5s !important;
@@ -9239,10 +9244,12 @@ html,body,p,h1,h2,h3,h4,h5,h6,span{
     
 }
 .wrapHbox > a.HovBox3 .boxwrapS span.top-right{
-    text-align: left;
+    text-align: center;
+	vertical-align: middle;
+	line-height: 185px;
 }
 .wrapHbox > a.HovBox3 .boxwrapS .bottom-box p.details,.wrapHbox > a.HovBox3 .boxwrapS .bottom-box span.bottom-left{
-    text-align: right;
+    text-align: left;
 }
 
 
@@ -10053,6 +10060,18 @@ ul.socialfoot li a:hover{
 }
 .amari img{
 	width: 100%;
+	-moz-transform: translateZ(0) scale(1);
+	-ms-transform: translateZ(0) scale(1);
+	-webkit-transform: translateZ(0) scale(1);
+	transform: translateZ(0) scale(1);
+	transition: all .4s ease-out;
+}
+.amari img:hover{
+	-moz-transform: translateZ(0) scale(1.15);
+	-ms-transform: translateZ(0) scale(1.15);
+	-webkit-transform: translateZ(0) scale(1.15);
+	transform: translateZ(0) scale(1.15);
+	transition: all .4s ease-out;
 }
 .o-container {
 	padding-right: 9.5625rem;
@@ -10314,8 +10333,20 @@ p.c-article_summary {
 	font-size: 18px;
 	padding-left:0px;
 }
+.amari.Side-Amar{
+	top: 50%;
+	right: -100px;
+	position: fixed;
+	transition: all .4s ease-out;
+}
+.amari.Side-Amar.Show{
+	right: 0px;
+	transition: all .4s ease-out;
+}
 
-
+.CusCol-2.bg-color-cus1{
+	position: relative;
+}
 
 @media (max-width: 1370px){
 	#MOD .col-lg-3 {
@@ -10384,7 +10415,7 @@ p.c-article_summary {
 }
 .wrapHbox > a:hover .bottom-box {
 	transition-delay: .1s;
-	transform: translateY(0) translateZ(0) !important;
+	transform: translateY(-140%) translateZ(0) !important;
 }
 .wrapHbox > a .boxwrapS .bottom-box p.details {
 	font-family: 'Open Sans', sans-serif;
